@@ -6,6 +6,10 @@ import oshi.hardware.CentralProcessor;
 import oshi.hardware.GlobalMemory;
 import oshi.hardware.GraphicsCard;
 
+/**
+ * @deprecated this is bad class use InfoWrapper
+ */
+@Deprecated
 public abstract class AbstractMachineData {
 
   protected String operatingSystemName;

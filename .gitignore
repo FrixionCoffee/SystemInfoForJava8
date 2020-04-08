@@ -1,2 +1,4 @@
 /build
 /SystemInfoForJava8
+/.gradle
+/.idea

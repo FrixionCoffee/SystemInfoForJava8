@@ -5,6 +5,10 @@ import java.nio.file.Paths;
 
 public class WorkingDirectory {
 
-  String appData = System.getProperty("user.home");
-  Path dirPath = Paths.get(appData, "Desktop");
+  private static String appData = System.getProperty("user.home");
+  static Path dirPath = Paths.get(appData, "Desktop");
+
+  static void overWrite(String path) {
+    dirPath = Paths.get(path);
+  }
 }

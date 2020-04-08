@@ -1,18 +1,30 @@
 package jp.sugarcoffee.java8.systeminfo;
 
+import jp.sugarcoffee.java8.systeminfo.wrapper.CPUInfoWrapper;
+import jp.sugarcoffee.java8.systeminfo.wrapper.GPUInfoWrapper;
+import jp.sugarcoffee.java8.systeminfo.wrapper.GlobalMemoryInfoWrapper;
+import jp.sugarcoffee.java8.systeminfo.wrapper.InfoWrapper;
+import jp.sugarcoffee.java8.systeminfo.wrapper.OSInfoWrapper;
+
 public class Main {
 
   public static void main(String[] args) {
 
+    if (args.length == 1) {
+      WorkingDirectory.overWrite(args[0]);
+    }
+
     InformationGetHelper info = new InformationGetHelper();
-    MachineData data = new MachineData();
+    InfoWrapper.infoList.add("--System info for Java8 start--");
 
-    data.setOperatingSystemName(info.getOSName());
-    data.setCPU(info.getCPU());
-    data.setGPU(info.getGPU());
-    data.setMemoryWrapper(info.getMemory());
+    new OSInfoWrapper(info.getOS());
+    new CPUInfoWrapper(info.getCPU());
+    new GPUInfoWrapper(info.getGPU());
+    new GlobalMemoryInfoWrapper(info.getMemory());
 
-    Print print = new Print(data);
+    InfoWrapper.infoList.add("--System info for Java8 end--");
+
+    Print print = new Print();
     print.machineDataWrite();
   }
 

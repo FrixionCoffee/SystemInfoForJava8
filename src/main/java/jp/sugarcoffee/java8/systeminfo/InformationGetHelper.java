@@ -22,16 +22,20 @@ public class InformationGetHelper {
     return hardware.getProcessor();
   }
 
-  GraphicsCard getGPU() {
-    return hardware.getGraphicsCards()[0];
-  }
-
-  String getOSName() {
-    return OS.getFamily();
+  GraphicsCard[] getGPU() {
+    return hardware.getGraphicsCards();
   }
 
   GlobalMemory getMemory() {
     return hardware.getMemory();
+  }
+
+  HardwareAbstractionLayer getHardware() {
+    return hardware;
+  }
+
+  OperatingSystem getOS() {
+    return OS;
   }
 
 

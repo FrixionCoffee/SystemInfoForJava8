@@ -9,11 +9,8 @@ import java.util.List;
 
 public class Print {
 
-  final AbstractMachineData data;
+  public Print() {
 
-
-  public Print(AbstractMachineData data) {
-    this.data = data;
   }
 
   void createDir(Path dirPath) {
@@ -76,10 +73,13 @@ public class Print {
   void machineDataWrite() {
 
     WorkingDirectory workingDirectory = new WorkingDirectory();
-    Path dirPath = workingDirectory.dirPath.resolve("SystemInfoForJava8");
+    Path dirPath = WorkingDirectory.dirPath.resolve("SystemInfoForJava8");
     createDir(dirPath);
     createTextFile(dirPath, "result");
 
+    Path filePath = dirPath.resolve("result.txt");
+
+    write(filePath, jp.sugarcoffee.java8.systeminfo.wrapper.InfoWrapper.infoList);
   }
 
 
