@@ -1,15 +1,16 @@
-##Name
+Name
+====
 System Info for Java8
 
-##Prerequisites
+## Prerequisites
 JRE8(default use mineCraft launcher)
 
-##Overview
+## Overview
 PC environment can be acquired.
 
 This software is intended for users to easily extract the execution environment.
 For the game community.
-###exampleData
+### exampleData
 --System info for Java8 start--
 
 OS:Windows10 build 18363
@@ -24,9 +25,9 @@ physical RAM:32.0GB
 
 --System info for Java8 end--
 
-##licence
+## licence
 GNU Lesser General Public License v2.1
-##License of external library used
+## License of external library used
 
 | Dependency | Jar | License name |License text URL|
 |:-----------|:------------:|:------------:|:------------:|
