@@ -3,14 +3,14 @@ Name
 System Info for Java8
 
 ## Prerequisites
-JRE8(default use mineCraft launcher)
+JRE8(default use mineCraft launcher JRE)
 
 ## Overview
 PC environment can be acquired.
 
 This software is intended for users to easily extract the execution environment.
 For the game community.
-### exampleData
+### Example Export Data
 --System info for Java8 start--
 
 OS:Windows10 build 18363
@@ -19,14 +19,15 @@ bit:64
 
 CPU:Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
 
-GPU1:NVIDIA GeForce GTX 980 DriverVersion=26.21.14.4575
+GPU1:NVIDIA GeForce GTX 1650 DriverVersion=26.21.14.4575
 
 physical RAM:32.0GB
 
 --System info for Java8 end--
 
+
 ## licence
-GNU Lesser General Public License v2.1
+Apache License v2.0
 ## License of external library used
 
 | Dependency | Jar | License name |License text URL|
@@ -39,7 +40,7 @@ GNU Lesser General Public License v2.1
 |net.java.dev.jna:jna-platform:5.5.0|jna-platform-5.5.0.jar|Apache License v2.0|http://www.apache.org/licenses/LICENSE-2.0.txt|
 
 
-##used Plugin License
+## used Plugin License
 | Plugin | License name |License text URL|
 |:----|:----:|:----:|
 |com.github.johnrengelman.shadow:4.0.2|Apache License 2.0|http://www.apache.org/licenses/LICENSE-2.0.txt|
