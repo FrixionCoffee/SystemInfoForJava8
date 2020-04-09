@@ -5,6 +5,12 @@ System Info for Java8
 ## Prerequisites
 JRE8(default use mineCraft launcher JRE)
 
+## Use
+
+java -jar "SystemInfoForJava8.jar path" [option export path]
+
+ex) java -jar "C:\example\SystemInfoForJava8.jar" D:\SystemInfo
+
 ## Overview
 PC environment can be acquired.
 
