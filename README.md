@@ -51,3 +51,5 @@ Apache License v2.0
 |:----|:----:|:----:|
 |com.github.johnrengelman.shadow:4.0.2|Apache License 2.0|http://www.apache.org/licenses/LICENSE-2.0.txt|
 |com.github.hierynomus.license:0.15.0|Apache License 2.0|http://www.apache.org/licenses/LICENSE-2.0.txt|
+
+Thank you OSS developer!
